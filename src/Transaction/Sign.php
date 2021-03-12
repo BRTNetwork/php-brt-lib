@@ -3,9 +3,9 @@
 namespace BRTNetwork\BRTLib\Transaction;
 
 use Exception;
-use Lessmore92\Buffer\Buffer;
-use BRTNetwork\BRTLibBinaryCodec\RippleBinaryCodec;
-use BRTNetwork\BRTLibKeypairs\RippleKeyPairs;
+use BRTNetwork\Buffer\Buffer;
+use BRTNetwork\BRTBinaryCodec\BRTBinaryCodec;
+use BRTNetwork\BRTKeypairs\BRTKeyPairs;
 
 define('TRANSACTION_ID', 0x54584e00); // 'TXN'
 
@@ -18,14 +18,14 @@ class Sign
 {
     private $keypair;
     /**
-     * @var RippleKeyPairs
+     * @var BRTKeyPairs
      */
     private $binaryCodec;
 
     public function __construct()
     {
-        $this->keypair     = new RippleKeyPairs();
-        $this->binaryCodec = new RippleBinaryCodec();
+        $this->keypair     = new BRTKeyPairs();
+        $this->binaryCodec = new BRTBinaryCodec();
     }
 
     public function sign($txJson, $secret, $options = [])
@@ -40,7 +40,7 @@ class Sign
             throw new Exception('txJSON must not contain "TxnSignature" or "Signers" properties');
         }
 
-        //fee checking moved to Ripple.php
+        //fee checking moved to API.php
         //$this->checkFee($txJson['fee']);
 
         $txToSignAndEncode                  = $txJson;

@@ -14,9 +14,9 @@ use BRTNetwork\BRTLib\GuzzleClient\Request;
 use BRTNetwork\BRTLib\Model\Response\AccountInfo;
 use BRTNetwork\BRTLib\Transaction\Sign;
 
-class RippleAPI
+class API
 {
-    protected $maxFeeXRP;
+    protected $maxFeeBRT;
     protected $feeCushion = null;
     /**
      * @var HttpClientInterface
@@ -33,7 +33,7 @@ class RippleAPI
 
     public function __construct($options = [], HttpClientInterface $http = null)
     {
-        $this->maxFeeXRP = isset($options['maxFeeXRP']) ? strval($options['maxFeeXRP']) : '2';
+        $this->maxFeeBRT = isset($options['maxFeeBRT']) ? strval($options['maxFeeBRT']) : '2';
 
         if (!isset($options['server']))
         {
@@ -110,7 +110,7 @@ class RippleAPI
         $baseFeeXrp = $serverInfo['validated_ledger']['base_fee_brt'];
         $fee        = $baseFeeXrp * $serverInfo['load_factor'] * $cushion;
 
-        $fee = min($this->maxFeeXRP, $fee);
+        $fee = min($this->maxFeeBRT, $fee);
         return number_format($fee, 6, '.', '');
     }
 
@@ -130,10 +130,10 @@ class RippleAPI
     protected function checkFee(string $fee)
     {
         $fee         = new BN($fee);
-        $maxFeeDrops = Utils::brtToDrops($this->maxFeeXRP);
+        $maxFeeDrops = Utils::brtToDrops($this->maxFeeBRT);
         if ($fee->gt(new BN($maxFeeDrops)))
         {
-            throw new \Exception("Fee should not exceed '{$maxFeeDrops}'. To use a higher fee, set 'maxFeeXRP' in the RippleAPI constructor.");
+            throw new \Exception("Fee should not exceed '{$maxFeeDrops}'. To use a higher fee, set 'maxFeeBRT' in the API constructor.");
         }
     }
 }
