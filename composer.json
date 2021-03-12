@@ -20,7 +20,7 @@
     "php": ">7",
     "brtnetwork/brt-keypairs": "^v1.0",
     "brtnetwork/brt-binary-codec": "^v1.0",
-    "guzzlehttp/guzzle": "^6.3"
+    "guzzlehttp/guzzle": "^7.2"
   },
   "autoload": {
     "psr-4": {
