@@ -9,11 +9,6 @@ use BRTNetwork\BRTKeypairs\BRTKeyPairs;
 
 define('TRANSACTION_ID', 0x54584e00); // 'TXN'
 
-/**
- * User: Lessmore92
- * Date: 1/12/2021
- * Time: 3:14 PM
- */
 class Sign
 {
     private $keypair;

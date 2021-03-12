@@ -1,10 +1,4 @@
 <?php
-/**
- * User: Lessmore92
- * Date: 1/14/2021
- * Time: 3:24 PM
- */
-
 namespace BRTNetwork\BRTLib\Model\Response;
 
 use BRTNetwork\BRTLib\Foundation\Contracts\ResponseModelInterface;

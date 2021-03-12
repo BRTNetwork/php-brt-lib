@@ -4,11 +4,6 @@ namespace BRTNetwork\BRTLib\Model\Base;
 
 use BRTNetwork\BRTLib\Utils;
 
-/**
- * User: Lessmore92
- * Date: 1/14/2021
- * Time: 3:31 PM
- */
 class Balance
 {
     protected $drops = '';

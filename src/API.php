@@ -1,10 +1,4 @@
 <?php
-/**
- * User: Lessmore92
- * Date: 1/12/2021
- * Time: 2:21 PM
- */
-
 namespace BRTNetwork\BRTLib;
 
 use BN\BN;
