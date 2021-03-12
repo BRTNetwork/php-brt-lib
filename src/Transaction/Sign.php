@@ -1,11 +1,11 @@
 <?php
 
-namespace Lessmore92\Ripple\Transaction;
+namespace BRTNetwork\BRTLib\Transaction;
 
 use Exception;
 use Lessmore92\Buffer\Buffer;
-use Lessmore92\RippleBinaryCodec\RippleBinaryCodec;
-use Lessmore92\RippleKeypairs\RippleKeyPairs;
+use BRTNetwork\BRTLibBinaryCodec\RippleBinaryCodec;
+use BRTNetwork\BRTLibKeypairs\RippleKeyPairs;
 
 define('TRANSACTION_ID', 0x54584e00); // 'TXN'
 

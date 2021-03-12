@@ -1,2 +1,3 @@
-# php-ripple-lib
-PHP API for interacting with the XRP Ledger
+# php-brt-lib
+
+PHP API for interacting with the BRT Ledger

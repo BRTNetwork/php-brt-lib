@@ -1,6 +1,6 @@
 <?php
 
-namespace Lessmore92\Ripple\Foundation\Contracts;
+namespace BRTNetwork\BRTLib\Foundation\Contracts;
 
 interface HttpRequestInterface
 {

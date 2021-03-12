@@ -1,8 +1,8 @@
 <?php
 
-namespace Lessmore92\Ripple\Model\Base;
+namespace BRTNetwork\BRTLib\Model\Base;
 
-use Lessmore92\Ripple\Utils;
+use BRTNetwork\BRTLib\Utils;
 
 /**
  * User: Lessmore92
@@ -23,16 +23,16 @@ class Balance
         return new self($drops);
     }
 
-    public function toXrp()
+    public function toBrt()
     {
-        return Utils::dropsToXrp($this->drops);
+        return Utils::dropsToBrt($this->drops);
     }
 
     public function __debugInfo()
     {
         return [
             'drops' => $this->drops,
-            'xrp'   => Utils::dropsToXrp($this->drops),
+            'brt'   => Utils::dropsToBrt($this->drops),
         ];
     }
 }

@@ -5,7 +5,7 @@
  * Time: 3:26 PM
  */
 
-namespace Lessmore92\Ripple\Foundation\Contracts;
+namespace BRTNetwork\BRTLib\Foundation\Contracts;
 
 
 interface ResponseModelInterface

@@ -1,8 +1,8 @@
 <?php
 
-namespace Lessmore92\Ripple\GuzzleClient;
+namespace BRTNetwork\BRTLib\GuzzleClient;
 
-use Lessmore92\Ripple\Foundation\Contracts\HttpRequestInterface;
+use BRTNetwork\BRTLib\Foundation\Contracts\HttpRequestInterface;
 
 class Request implements HttpRequestInterface
 {

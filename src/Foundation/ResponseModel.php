@@ -5,7 +5,7 @@
  * Time: 3:27 PM
  */
 
-namespace Lessmore92\Ripple\Foundation;
+namespace BRTNetwork\BRTLib\Foundation;
 
 abstract class ResponseModel
 {

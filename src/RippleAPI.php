@@ -5,14 +5,14 @@
  * Time: 2:21 PM
  */
 
-namespace Lessmore92\Ripple;
+namespace BRTNetwork\BRTLib;
 
 use BN\BN;
-use Lessmore92\Ripple\Foundation\Contracts\HttpClientInterface;
-use Lessmore92\Ripple\GuzzleClient\Http;
-use Lessmore92\Ripple\GuzzleClient\Request;
-use Lessmore92\Ripple\Model\Response\AccountInfo;
-use Lessmore92\Ripple\Transaction\Sign;
+use BRTNetwork\BRTLib\Foundation\Contracts\HttpClientInterface;
+use BRTNetwork\BRTLib\GuzzleClient\Http;
+use BRTNetwork\BRTLib\GuzzleClient\Request;
+use BRTNetwork\BRTLib\Model\Response\AccountInfo;
+use BRTNetwork\BRTLib\Transaction\Sign;
 
 class RippleAPI
 {
@@ -107,7 +107,7 @@ class RippleAPI
         }
 
         $serverInfo = $this->serverInfo();
-        $baseFeeXrp = $serverInfo['validated_ledger']['base_fee_xrp'];
+        $baseFeeXrp = $serverInfo['validated_ledger']['base_fee_brt'];
         $fee        = $baseFeeXrp * $serverInfo['load_factor'] * $cushion;
 
         $fee = min($this->maxFeeXRP, $fee);
@@ -130,7 +130,7 @@ class RippleAPI
     protected function checkFee(string $fee)
     {
         $fee         = new BN($fee);
-        $maxFeeDrops = Utils::xrpToDrops($this->maxFeeXRP);
+        $maxFeeDrops = Utils::brtToDrops($this->maxFeeXRP);
         if ($fee->gt(new BN($maxFeeDrops)))
         {
             throw new \Exception("Fee should not exceed '{$maxFeeDrops}'. To use a higher fee, set 'maxFeeXRP' in the RippleAPI constructor.");

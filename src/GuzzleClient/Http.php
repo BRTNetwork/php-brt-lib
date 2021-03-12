@@ -1,12 +1,12 @@
 <?php
 
-namespace Lessmore92\Ripple\GuzzleClient;
+namespace BRTNetwork\BRTLib\GuzzleClient;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
-use Lessmore92\Ripple\Foundation\Contracts\HttpClientInterface;
-use Lessmore92\Ripple\Foundation\Contracts\HttpRequestInterface;
-use Lessmore92\Ripple\Foundation\Contracts\HttpResponseInterface;
+use BRTNetwork\BRTLib\Foundation\Contracts\HttpClientInterface;
+use BRTNetwork\BRTLib\Foundation\Contracts\HttpRequestInterface;
+use BRTNetwork\BRTLib\Foundation\Contracts\HttpResponseInterface;
 
 class Http implements HttpClientInterface
 {

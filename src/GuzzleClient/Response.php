@@ -1,9 +1,9 @@
 <?php
 
-namespace Lessmore92\Ripple\GuzzleClient;
+namespace BRTNetwork\BRTLib\GuzzleClient;
 
 
-use Lessmore92\Ripple\Foundation\Contracts\HttpResponseInterface;
+use BRTNetwork\BRTLib\Foundation\Contracts\HttpResponseInterface;
 use Psr\Http\Message\ResponseInterface;
 
 class Response implements HttpResponseInterface

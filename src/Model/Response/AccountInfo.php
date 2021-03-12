@@ -5,12 +5,12 @@
  * Time: 3:24 PM
  */
 
-namespace Lessmore92\Ripple\Model\Response;
+namespace BRTNetwork\BRTLib\Model\Response;
 
-use Lessmore92\Ripple\Foundation\Contracts\ResponseModelInterface;
-use Lessmore92\Ripple\Foundation\ResponseModel;
-use Lessmore92\Ripple\Model\Base\Balance;
-use Lessmore92\Ripple\Utils;
+use BRTNetwork\BRTLib\Foundation\Contracts\ResponseModelInterface;
+use BRTNetwork\BRTLib\Foundation\ResponseModel;
+use BRTNetwork\BRTLib\Model\Base\Balance;
+use BRTNetwork\BRTLib\Utils;
 
 class AccountInfo extends ResponseModel implements ResponseModelInterface
 {
