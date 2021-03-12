@@ -1,5 +1,5 @@
 {
-  "name": "brtnetwork/php-brt-lib",
+  "name": "brtnetwork/brt-lib",
   "description": "PHP API for interacting with the BRT Ledger",
   "keywords": [
     "brt",
