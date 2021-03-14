@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "616e2499c9b7f57519dff8e49729c0b0",
+    "content-hash": "0b7be5989d695c20d5279d93992cbd56",
     "packages": [
         {
             "name": "brtnetwork/base-x",
@@ -163,16 +163,16 @@
         },
         {
             "name": "brtnetwork/brt-keypairs",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BRTNetwork/php-brt-keypairs.git",
-                "reference": "b9f4f3f3b84f16b4ccee4fef3c9f8f797ed96db2"
+                "reference": "d3f712060ead5622edfab0f711e7fab3dc34838e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BRTNetwork/php-brt-keypairs/zipball/b9f4f3f3b84f16b4ccee4fef3c9f8f797ed96db2",
-                "reference": "b9f4f3f3b84f16b4ccee4fef3c9f8f797ed96db2",
+                "url": "https://api.github.com/repos/BRTNetwork/php-brt-keypairs/zipball/d3f712060ead5622edfab0f711e7fab3dc34838e",
+                "reference": "d3f712060ead5622edfab0f711e7fab3dc34838e",
                 "shasum": ""
             },
             "require": {
@@ -209,9 +209,9 @@
                 "xrpl"
             ],
             "support": {
-                "source": "https://github.com/BRTNetwork/php-brt-keypairs/tree/1.0.1"
+                "source": "https://github.com/BRTNetwork/php-brt-keypairs/tree/1.0.2"
             },
-            "time": "2021-03-14T18:15:18+00:00"
+            "time": "2021-03-14T18:51:36+00:00"
         },
         {
             "name": "brtnetwork/buffer",

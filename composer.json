@@ -18,7 +18,7 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">7",
-    "brtnetwork/brt-keypairs": "1.0.1",
+    "brtnetwork/brt-keypairs": "1.0.2",
     "brtnetwork/brt-binary-codec": "^v1.0",
     "guzzlehttp/guzzle": "^7.2"
   },
