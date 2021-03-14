@@ -5,7 +5,7 @@ namespace BRTNetwork\BRTLib\Transaction;
 use Exception;
 use BRTNetwork\Buffer\Buffer;
 use BRTNetwork\BRTBinaryCodec\BRTBinaryCodec;
-use BRTNetwork\BRTKeypairs\BRTKeyPairs;
+use BRTNetwork\BRTKeypairs\BRTKeypairs;
 
 define('TRANSACTION_ID', 0x54584e00); // 'TXN'
 
@@ -13,13 +13,13 @@ class Sign
 {
     private $keypair;
     /**
-     * @var BRTKeyPairs
+     * @var BRTKeypairs
      */
     private $binaryCodec;
 
     public function __construct()
     {
-        $this->keypair     = new BRTKeyPairs();
+        $this->keypair     = new BRTKeypairs();
         $this->binaryCodec = new BRTBinaryCodec();
     }
 

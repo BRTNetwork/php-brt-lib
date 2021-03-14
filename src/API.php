@@ -49,7 +49,7 @@ class API
             'account'      => $account,
             'strict'       => $strict,
             'ledger_index' => $ledgerIndex,
-            '   queue'     => $queue,
+            'queue'     => $queue,
         ])['account_data']);
     }
 
